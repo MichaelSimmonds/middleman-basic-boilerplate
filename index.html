@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Middleman-Basic-Boilerplate</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="index">
+
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Home</a>
+                </li>
+                <li><a href="#">Products</a>
+                </li>
+                <li><a href="#">About Us</a>
+                </li>
+                <li><a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="welcome text-center padded">
+  <h1>Welcome to Middleman</h1>
+  <h3>This boilerplate uses:-</h3>
+  <p class="doc">
+    <a href="https://github.com/jasl/jquery-middleman">JQuery-middleman</a>
+  </p>
+  <p class="doc">
+    <a href="https://github.com/twbs/bootstrap-sass">Bootstrap-sass(3.6)</a>
+  </p>
+  <p class="doc">
+    <a href="https://github.com/middleman/middleman-autoprefixer">middleman-autoprefixer</a>
+  </p>
+  <p class="doc">
+    <a href="https://rubygems.org/gems/middleman-livereload/versions/3.4.6">middleman-livereload</a>
+  </p>
+  <p>__________</p>
+  <h4>Stuck?</h4>
+  <p class="doc">
+    <a href="http://middlemanapp.com/">Read Online Documentation</a>
+  </p>
+
+  <h4> Deployment</h4>
+  <p>edit the config.rb fole to change how the site is deployed when the <code>middleman deploy</code> command is used. You can deploy to gh-pages or via FTP/SFTP to your server</p>
+</div>
+<style>
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+
+  </body>
+</html>
