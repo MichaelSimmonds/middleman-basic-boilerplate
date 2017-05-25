@@ -78,14 +78,36 @@ configure :build do
   activate :build_cleaner
 end
 
-# Deployment
+# GhPages Deployment
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
+  deploy.branch = 'gh-pages' # default: gh-pages
 
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin
-  # deploy.branch = 'custom-branch' # default: gh-pages
   # deploy.strategy = :submodule # commit strategy: can be :force_push or :submodule, default: :force_push
   # deploy.commit_message = 'custom-message' # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
+
+#FTP Deployment
+# activate :deploy do |deploy|
+#   deploy.build_before = true #builds before deploymant
+#   deploy.method   = :ftp
+#   deploy.host     = 'ftp.example.com'
+#   deploy.path     = '/srv/www/site'
+#   deploy.user     = 'tvaughan'
+#   deploy.password = 'secret'
+# end
+
+#SFTP Deployment
+# activate :deploy do |deploy|
+#   deploy.build_before = true #Builds before deploymane
+#   deploy.method   = :sftp
+#   deploy.host     = 'sftp.example.com'
+#   deploy.port     = 22
+#   deploy.path     = '/srv/www/site'
+#   # Optional Settings
+#   # deploy.user     = 'tvaughan' # no default
+#   # deploy.password = 'secret' # no default
+# end
